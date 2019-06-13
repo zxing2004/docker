@@ -1,4 +1,4 @@
-FROM docker:18.09
+FROM zxing2004/docker:latest
 
 # https://github.com/docker/docker/blob/master/project/PACKAGERS.md#runtime-dependencies
 RUN set -eux; \
