@@ -44,9 +44,9 @@ RUN set -eux; \
 	docker --version; \
 	mkdir -p /etc/docker
 	
-COPY daemon.json /etc/docker/daemon.json
 COPY modprobe.sh /usr/local/bin/modprobe
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY daemon.json /etc/docker/daemon.json
 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD ["sh"]
